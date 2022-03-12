@@ -90,7 +90,7 @@ def web_plot(StockTestName):
         0, 700, (50, 280))
     
     col_name = ()
-    loadResult  = pd.read_csv('C:/Users/HP/Documents/GitHub/myTradeWebApp/myPickStock_' + str(today) + '.csv')
+    loadResult  = pd.read_csv('C:/Users/HP/Documents/GitHub/myTradeWebApp/myPickStock.csv')
     records = loadResult.to_records(index = False)
     index, col_name, col_date, col_price = zip(*records) 
     # Selectbox_findStockName = st.sidebar.selectbox('List of detected stock',col_name)
